@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B313BC77-AF89-443D-AE94-DBA2D75C1CE3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dental_2021</RootNamespace>
+    <AssemblyName>Dental_2021</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add_Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Doctor.Designer.cs">
+      <DependentUpon>Add_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Patient.Designer.cs">
+      <DependentUpon>Add_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Reseption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Reseption.Designer.cs">
+      <DependentUpon>Add_Reseption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Treatment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Treatment.Designer.cs">
+      <DependentUpon>Add_Treatment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baza_0DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baza_0DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="baza_0DataSet1.cs">
+      <DependentUpon>baza_0DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="baza_0DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baza_0DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="baza_0DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baza_0DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="baza_0DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baza_0DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="baza_0DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baza_0DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="baza_0DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baza_0DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="baza_0DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>baza_0DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Del_Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del_Doctor.Designer.cs">
+      <DependentUpon>Del_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Del_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Del_Patient.Designer.cs">
+      <DependentUpon>Del_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Doctor.Designer.cs">
+      <DependentUpon>Edit_Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Patient.Designer.cs">
+      <DependentUpon>Edit_Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Add_Doctor.resx">
+      <DependentUpon>Add_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Patient.resx">
+      <DependentUpon>Add_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Reseption.resx">
+      <DependentUpon>Add_Reseption.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Treatment.resx">
+      <DependentUpon>Add_Treatment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del_Doctor.resx">
+      <DependentUpon>Del_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Del_Patient.resx">
+      <DependentUpon>Del_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Doctor.resx">
+      <DependentUpon>Edit_Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Patient.resx">
+      <DependentUpon>Edit_Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="baza_0DataSet.xsc">
+      <DependentUpon>baza_0DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baza_0DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="baza_0DataSet.xss">
+      <DependentUpon>baza_0DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet1.xsc">
+      <DependentUpon>baza_0DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baza_0DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="baza_0DataSet1.xss">
+      <DependentUpon>baza_0DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet2.xsc">
+      <DependentUpon>baza_0DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baza_0DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="baza_0DataSet2.xss">
+      <DependentUpon>baza_0DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet3.xsc">
+      <DependentUpon>baza_0DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baza_0DataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="baza_0DataSet3.xss">
+      <DependentUpon>baza_0DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet4.xsc">
+      <DependentUpon>baza_0DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baza_0DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="baza_0DataSet4.xss">
+      <DependentUpon>baza_0DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet5.xsc">
+      <DependentUpon>baza_0DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baza_0DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="baza_0DataSet5.xss">
+      <DependentUpon>baza_0DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet6.xsc">
+      <DependentUpon>baza_0DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="baza_0DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>baza_0DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="baza_0DataSet6.xss">
+      <DependentUpon>baza_0DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="baza_0.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="bin\Debug\Image\exit3.png" />
+    <None Include="bin\Debug\Image\exit1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
